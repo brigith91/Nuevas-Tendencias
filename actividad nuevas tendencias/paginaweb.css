@@ -1,0 +1,63 @@
+/* Estilos del cuerpo de la página */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0; /* Color inicial neutro */
+    
+    /* Animación CSS (Paso 5: Transiciones suaves) */
+    transition: background-color 0.8s ease-in-out; 
+}
+
+/* Estilos del título (Paso 5: Ajuste de tamaño y color) */
+h1 {
+    color: #ff5733; /* Color vibrante */
+    font-size: 2.8em; 
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos base para todos los botones */
+button {
+    padding: 12px 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    margin: 5px;
+    
+    /* Efectos visuales de la modificación manual */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease;
+}
+
+/* Estilo para el botón principal (Aleatorio) */
+#cambiarColorBtn {
+    background-color: #007bff;
+    margin-bottom: 20px;
+}
+
+#cambiarColorBtn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Ligeramente más grande al pasar el mouse */
+}
+
+/* Contenedor de los botones de color fijo */
+.opciones-color {
+    margin-top: 20px;
+}
+
+/* Estilos específicos para los botones fijos */
+#btnRojo { background-color: red; }
+#btnVerde { background-color: green; }
+#btnAzul { background-color: blue; }
+
+.color-fijo:hover {
+    opacity: 0.8;
+    transform: translateY(-2px); /* Pequeño levantamiento */
+}
